@@ -54,7 +54,7 @@ public class Main extends Application {
 			Scene tie = new Scene(tieRoot, 700, 700);
 			tie.getStylesheets().add("CSS/result.css");
 			
-			welcomeCtrl.playButton.setOnAction(e->{				
+			welcomeCtrl.playButton.setOnAction(e->{
 				player = new Player(data->{
 					Platform.runLater(()->{
 						try {
@@ -67,8 +67,7 @@ public class Main extends Application {
 								welcomeCtrl.updateWaiting("Try restarting the application!");
 								primaryStage.setScene(welcome);
 								primaryStage.setTitle("Welcome Player");
-							}
-							else if (cfi.playerCount == 1) {
+							} else if (cfi.playerCount == 1) {
 								welcomeCtrl.playButton.setDisable(true);
 								PauseTransition pt = new PauseTransition(Duration.seconds(0.5));
 								pt.setOnFinished(el->{
@@ -114,7 +113,7 @@ public class Main extends Application {
 									boardCtrl.updateInstruction(":-|");
 									PauseTransition pt1 = new PauseTransition(Duration.seconds(0.5));
 									pt1.setOnFinished(el->{
-										boardCtrl.updateTurn("Well, it is a tie.");
+										boardCtrl.updateTurn("Well, it's a tie.");
 									});
 									pt1.play();
 									PauseTransition pt = new PauseTransition(Duration.seconds(2));

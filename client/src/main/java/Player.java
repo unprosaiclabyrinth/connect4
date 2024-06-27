@@ -38,15 +38,14 @@ public class Player extends Thread {
 			out = new ObjectOutputStream(playerSocket.getOutputStream());
 			in = new ObjectInputStream(playerSocket.getInputStream());
 			playerSocket.setTcpNoDelay(true);
-		}
-		catch (Exception e) {
-			System.out.println("*** Encountered unexpected exception from Player:36; Shutting down!!!!!");
+		} catch (Exception e) {
+			System.out.println("*** Failed to connect to server (perhaps it hasn't been started yet???)");
 			System.exit(1);
 		}
 		
 		while(true) {
 			try {
-				CFourInfo cfi = (CFourInfo)(in.readObject());
+				CFourInfo cfi = (CFourInfo) (in.readObject());
 				if (cfi.turn == 46) {
 					number = cfi.playerCount;
 				} else {
@@ -56,11 +55,10 @@ public class Player extends Thread {
 				System.out.println("*** CFourInfo class not found");
 				break;
 			} catch (Exception eof) {
-				callback.accept(new CFourInfo(-1,-1,-1,-1));
+				callback.accept(new CFourInfo(-1, -1, -1, -1));
 				break;
 			}
 		}
-			
 	}
 	
 	public void send(CFourInfo cfi) {
