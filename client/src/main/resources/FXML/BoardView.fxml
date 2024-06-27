@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="https://javafx.com/fxml/1" styleClass="Border" fx:id="root" fx:controller="BoardController" prefHeight="700" prefWidth="700" spacing="40"
+      style="-fx-background-color:Black">
+	<TextField fx:id="title" text="Connect 4" editable="false" alignment="center" />
+	<TextField fx:id="instruction" text="Click the square to play your move" editable="false" alignment="center" />
+	<TextField fx:id="turn" text="It is your turn:-" editable="false" alignment="center" />
+	<HBox alignment="center">
+		<GridPane fx:id="gameBoard" />
+	</HBox>
+</VBox>

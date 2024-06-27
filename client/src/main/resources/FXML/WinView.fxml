@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="https://javafx.com/fxml/1" styleClass="Border" fx:id="root" fx:controller="WinController" style="-fx-background-color:SpringGreen"
+      prefHeight="700" prefWidth="700">
+	<VBox prefHeight="500" alignment="center" style="-fx-background-color:SpringGreen">
+		<TextField fx:id="message" text="Congratulations! You Won!" editable="false" style="-fx-background-color:SpringGreen; -fx-text-fill:Green" alignment="center"/>
+	</VBox>
+	<HBox fx:id="options" alignment="center" spacing="100" style="-fx-background-color:SpringGreen">
+		<Button fx:id="newGame" text="New Game" prefWidth="130"/>
+		<Button fx:id="exit" text="Exit" prefWidth="130"/>
+	</HBox>
+</VBox>

@@ -1,0 +1,30 @@
+.text-field {
+	-fx-font-weight: Bold;
+	-fx-font-family: Rockwell;
+}
+
+#title {
+	-fx-background-color: Lemonchiffon;
+	-fx-text-fill: Black;
+	-fx-font-size: 26;
+}
+
+#noOfPlayers {
+	-fx-background-color: Black;
+	-fx-text-fill: Lavender;
+	-fx-font-size: 20;
+}
+
+#gameState {
+	-fx-background-color: Black;
+	-fx-text-fill: Lavenderblush;
+	-fx-font-size: 20;
+}
+
+.button {
+	-fx-border-color: Blue;
+}
+
+.button:disabled {
+	-fx-opacity: 1.0;
+}

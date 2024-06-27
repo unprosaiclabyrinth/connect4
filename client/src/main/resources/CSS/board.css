@@ -1,0 +1,31 @@
+.text-field {
+	-fx-font-family: Rockwell;
+	-fx-font-weight: Bold;
+}
+
+#title {
+	-fx-background-color: Aquamarine;
+	-fx-text-fill: Black;
+	-fx-font-size: 26;
+}
+
+#instruction {
+	-fx-background-color: Black;
+	-fx-text-fill: Aquamarine;
+	-fx-font-size: 20;
+}
+
+#turn {
+	-fx-background-color: Black;
+	-fx-text-fill: Aquamarine;
+	-fx-font-size: 20;
+}
+
+.button {
+	-fx-border-color: Blue;
+}
+
+.button:disabled {
+	-fx-opacity: 0.85;
+}
+

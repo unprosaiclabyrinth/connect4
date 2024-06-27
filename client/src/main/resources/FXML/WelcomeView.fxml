@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="https://javafx.com/fxml/1" styleClass="Border" fx:id="root" fx:controller="WelcomeController" spacing="40"
+	  prefHeight="700" prefWidth="700" style="-fx-background-color:Black">
+	<TextField fx:id="title" text="Connect 4" editable="false" alignment="center" />
+	<TextField fx:id="lobby" text="Welcome! Press 'PLAY' to start the game." editable="false" alignment="center" />
+	<HBox alignment="center" style="-fx-background-color:Black;">
+		<Button fx:id="playButton" text="PLAY" style="-fx-font-weight:Bold; -fx-border-color:Coral; -fx-font-size:22" prefHeight="50" prefWidth="100"/>
+	</HBox>
+	<TextField fx:id="waiting" editable="false" alignment ="center"/>
+	<HBox fx:id="animation" alignment="center" spacing="50" style="-fx-background-color:Black;" >
+		<Circle fx:id="dot1" />
+		<Circle fx:id="dot2" />
+		<Circle fx:id="dot3" />
+	</HBox>
+</VBox>
+	  

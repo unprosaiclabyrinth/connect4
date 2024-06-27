@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="https://javafx.com/fxml/1" styleClass="Border" fx:id="root" fx:controller="ServerController" prefHeight="700" prefWidth="700" spacing="40"
+      style="-fx-background-color:Black;">
+	<TextField fx:id="title" text="Connect 4 - Server" editable="false" alignment="center"/>
+	<TextField fx:id="noOfPlayers" text="Number of players currently connected: 0" editable="false" alignment="center"/>
+	<TextField fx:id="gameState" text="Waiting for 2 players..." editable="false" alignment="center"/>
+	<HBox alignment="center" style="-fx-background-color:Black">
+		<GridPane fx:id="gameBoard" />
+	</HBox>
+</VBox>

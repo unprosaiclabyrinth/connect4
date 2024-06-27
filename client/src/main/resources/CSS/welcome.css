@@ -1,0 +1,27 @@
+.text-field {
+	-fx-font-weight: Bold;
+	-fx-font-family: Rockwell;
+}
+
+#title {
+	-fx-text-fill: Black;
+	-fx-background-color: Lightsalmon;
+	-fx-font-size: 26;
+}
+
+#lobby {
+	-fx-text-fill: LightSalmon;
+	-fx-background-color: Black;
+	-fx-font-size: 20;
+}
+
+#waiting {
+	-fx-text-fill: Chartreuse;
+	-fx-background-color: Black;
+	-fx-font-size: 20;
+}
+
+.button {
+	-fx-font-family: Rockwell;
+	-fx-border-color: Coral;
+}

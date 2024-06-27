@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="https://javafx.com/fxml/1" styleClass="Border" fx:id="root" fx:controller="LossController" style="-fx-background-color:Lightcoral"
+      prefHeight="700" prefWidth="700">
+	<VBox prefHeight="500" alignment="center" style="-fx-background-color:Lightcoral">
+		<TextField fx:id="message" text="Better luck next time." editable="false" style="-fx-background-color:Lightcoral; -fx-text-fill:Crimson" alignment="center"/>
+	</VBox>
+	<HBox fx:id="options" alignment="center" spacing="100" style="-fx-background-color:Lightcoral">
+		<Button fx:id="newGame" text="New Game" prefWidth="130"/>
+		<Button fx:id="exit" text="Exit" prefWidth="130"/>
+	</HBox>
+</VBox>

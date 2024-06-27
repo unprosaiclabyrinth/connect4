@@ -1,0 +1,27 @@
+.text-field {
+	-fx-font-weight: Bold;
+	-fx-font-family: Rockwell;
+}
+
+#title {
+	-fx-font-size: 26;
+	-fx-text-fill: Black;
+	-fx-background-color: Aquamarine;
+}
+
+#instruction {
+	-fx-font-size: 20;
+	-fx-text-fill: Aquamarine;
+	-fx-background-color: Black;
+}
+
+#on {
+	-fx-background-color: Chartreuse;
+	-fx-background-radius: 50%;
+	-fx-font-family: Rockwell;
+	-fx-font-weight: Bold;
+	-fx-border: 12px;
+	-fx-border-radius: 50%;
+	-fx-border-color: Green;
+	-fx-font-size: 20;
+}
